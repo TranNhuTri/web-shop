@@ -458,14 +458,114 @@ header
     }
     .product_item
     {
+        position: relative;
         height: 320px;
         margin: 10px 0;
         background-color: $white_color;
+        font-size: 14rem;
+        cursor: pointer;
         .product_img
         {
             padding-top: 100%;
             background-size: cover;
             background-position: center;
+        }
+        h3 
+        {
+            font-weight: 200;
+            font-size: 12rem;
+            color: $text_color;
+            height: 38px;
+            line-height: 18rem;
+            padding: 5px 10px;
+            margin: 0;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .product_cost
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 14rem;
+            .old_cost 
+            {
+                color: #a5a5a5;
+                text-decoration: line-through;
+            }
+            .new_cost
+            {
+                color: $main_color;
+            }
+        }
+        .product_action
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12rem;
+            padding: 4px 10px;
+            color: #a5a5a5;
+        }
+        .product_origin
+        {
+            text-align: right;
+            padding: 5px 10px;
+            color: #9c9c9c;
+        }
+        .product_favorite_label
+        {
+            position: absolute;
+            top: 10px;
+            left: -4px;
+            background-color: #f25220;
+            color: $white_color;
+            font-size: 12rem;
+            padding: 0 4px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
+        .product_favorite_label::before
+        {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            border-top: 4px solid;
+            border-left: 4px solid;
+            border-color: #913113 transparent transparent transparent;
+        }
+        .product_sale_label
+        {
+            font-size: 12rem;
+            background-color: #fdd435;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+            padding: 3px;
+            p 
+            {
+                margin: 0;
+                color: $main_color;
+            }
+            h4 
+            {
+                margin: 0;
+                color: $white_color;
+            }
+        }
+        .product_sale_label::before
+        {
+            content: "";
+            position: absolute;
+            top: 100%;
+            right: 0;
+            border-width: 4px 18.5px;
+            border-style: solid;
+            border-color: #fdd435 #fdd435 transparent #fdd435;
         }
     }
 }
