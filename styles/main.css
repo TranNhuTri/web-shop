@@ -302,6 +302,7 @@ header {
           transform-origin: 98% 0%;
   -webkit-transform: scale(0);
           transform: scale(0);
+  z-index: 1;
 }
 
 .header_with_search .header_cart a .product_of_cart .product_of_cart_img {
@@ -488,6 +489,7 @@ header {
   display: none;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  z-index: 1;
 }
 
 .container .product_filter .product_filter_btn_container .product_filter_cost_btn .cost_filter .cost_filter_list {
@@ -671,5 +673,34 @@ header {
   border-width: 4px 18.5px;
   border-style: solid;
   border-color: #fdd435 #fdd435 transparent #fdd435;
+}
+
+.container .product_item:hover {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+}
+
+.footer {
+  background-color: white;
+}
+
+.footer .footer_content {
+  height: 200px;
+  color: #333;
+  font-size: 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #ccc;
 }
 /*# sourceMappingURL=main.css.map */
