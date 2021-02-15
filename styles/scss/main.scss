@@ -318,15 +318,10 @@ header
                 padding: 10px 0;
                 margin: 0 20px;
                 border-bottom: 0.5px solid #ccc;
-                a 
-                {
-                    display: block;
-                    width: 100%;
-                    text-decoration: none;
-                    color: $text_color;
-                }
+                color: $text_color;
+                cursor: pointer;
             }
-            .category_item:hover a
+            .category_item:hover
             {
                 color: $main_color;
                 padding-left: 10px;
@@ -335,9 +330,6 @@ header
             .category_item--active
             {
                 pointer-events: none;
-            }
-            .category_item--active a
-            {
                 color: $main_color;
             }
             .category_item--active::before

@@ -4,6 +4,7 @@
   border-radius: 4px;
   font-size: 14rem;
   cursor: pointer;
+  user-select: none;
 }
 
 .button--active {
@@ -382,16 +383,11 @@ header {
   padding: 10px 0;
   margin: 0 20px;
   border-bottom: 0.5px solid #ccc;
-}
-
-.container .category .category_list .category_item a {
-  display: block;
-  width: 100%;
-  text-decoration: none;
   color: #333;
+  cursor: pointer;
 }
 
-.container .category .category_list .category_item:hover a {
+.container .category .category_list .category_item:hover {
   color: #f5402d;
   padding-left: 10px;
   -webkit-transition: all 0.1s ease-in;
@@ -400,9 +396,6 @@ header {
 
 .container .category .category_list .category_item--active {
   pointer-events: none;
-}
-
-.container .category .category_list .category_item--active a {
   color: #f5402d;
 }
 
